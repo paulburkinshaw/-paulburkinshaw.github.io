@@ -1,0 +1,870 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "UTF-8";
+
+/* @import "minima"; */
+
+@import url(https://unpkg.com/basscss@8.0.2/css/basscss.min.css);
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+   
+}
+
+
+@media (max-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: "zx_spectrum-7";
+    src: url("../assets/fonts/zx_spectrum-7.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco Display", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+
+    font-family: "zx_spectrum-7";
+    line-height: 1.4;
+    color: #2b303b;
+    /* font-weight: 400; */
+    margin: 0;
+    padding: 0;
+
+    animation: font-transition 2s linear forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+
+    
+}
+
+.sections {
+    
+}
+
+.modernise {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco Display", "Helvetica Neue", Helvetica, Arial,
+        sans-serif !important;
+}
+
+.loading-stripes {
+    background-color: yellow;
+    background-image: linear-gradient(transparent 50%, blue 50%);
+    background-size: 10px 10px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    animation: load 0.5s linear infinite, load-end 0.5s 1 2s forwards;
+}
+
+.loading-screen {
+    font-family: "zx_spectrum-7";
+    background: black;
+    color: #fff;
+    height: 87%;
+    margin: 4% 4% 4% 4%;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 48px;
+    position: relative;
+    line-height: 0.5;
+
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main-axis vertical */
+    justify-content: center; /* align items vertically, in this case */
+    align-items: center; /* align items horizontally, in this case */
+
+    animation: load-complete 3s forwards;
+    animation-timing-function: step-end;
+}
+
+.please-wait {
+    background-color: white;
+    color: black;
+}
+
+.spectrum-title {
+    opacity: 1;
+    /* animation: hide-spectrum 2s linear forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 5s; */
+}
+
+.hide-spectrum-title {
+    opacity: 1;
+    animation: hide-spectrum 2s linear forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+}
+
+.modern-title {
+    opacity: 0;
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco Display", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+    color: #cb2d6f;
+
+    color: #501f3a;
+    color: #14a098;
+    color: #0f292f;
+    /* animation: show-modern 3s linear forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 4s; */
+}
+
+#c-sharp {
+    color: #cb2d6f;
+}
+
+.modern-home {
+    background-color: #ffcb9a;
+}
+
+.show-modern-title {
+    opacity: 0;
+    /* position: absolute; */
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco Display", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+    animation: show-modern 3s linear forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+.modern-sections-hide {
+    display: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.show-modern-sections {
+    animation: show-modern-sections 3s linear forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+#scrollme {
+    opacity: 0;
+}
+
+@keyframes load {
+    0% {
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-y: 40px;
+    }
+}
+
+@keyframes load-middle {
+    0% {
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-y: 40px;
+    }
+}
+
+@keyframes load-end {
+    0% {
+        background-position-y: 0px;
+    }
+    50% {
+        background-position-y: 40px;
+    }
+    100% {
+        background: #fff;
+        /*  font-family: -apple-system, BlinkMacSystemFont, "San Francisco Display", "Helvetica Neue", Helvetica, Arial,
+        sans-serif; */
+    }
+}
+
+@keyframes load-complete {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        height: 0px;
+    }
+}
+
+@keyframes font-transition {
+    0% {
+        /*  font-weight: normal;
+        
+        font-family: "zx_spectrum-7"; */
+    }
+
+    100% {
+        /* font-size: 22px;
+        
+        font-family: -apple-system, BlinkMacSystemFont, "San Francisco Display", "Helvetica Neue", Helvetica, Arial,
+            sans-serif; */
+    }
+}
+
+@keyframes hide-spectrum {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show-modern {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show-modern-sections {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    transition: all 0.15s;
+}
+
+/* .home nav {
+    max-width: 1200px;
+    padding: 0 3rem;
+    margin: 0 auto;
+    height: 10vh;
+    min-height: 100px;
+}
+
+.home nav .container{
+    display: flex;
+} */
+
+.home {
+}
+
+.home header {
+    max-width: 1200px;
+    padding: 0 3rem;
+    margin: 0 auto;
+    height: 99vh;
+    min-height: 500px;
+}
+
+@media (max-width: 800px) {
+    .home header {
+        padding: 0 1rem;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .home header {
+        height: 85vh;
+    }
+}
+
+.home h1 {
+    font-weight: 800;
+    /*  font-weight: 400; */
+    font-size: 2.5rem;
+    /*  font-size: 4.5rem;
+    font-weight: 500; */
+}
+
+.spectrum-title h1 {
+    font-weight: 800;
+    /*  font-weight: 400; */
+    font-size: 4.5rem;
+    /*  font-size: 4.5rem;
+    font-weight: 500; */
+    font-size: 74px;
+    line-height: 0.8;
+    font-weight: 900;
+    font-family: "zx_spectrum-7";
+}
+
+@media (max-width: 640px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+}
+
+.home h1 a {
+    box-shadow: 0 -0.06em 0 #8469c7 inset;
+    transition: box-shadow 0.2s, color 0.2s, line-height 0.1s;
+    text-decoration: none;
+    line-height: 1;
+    color: #2b303b;
+    padding: 2px 2px 0 2px;
+    margin: -2px -2px 0 -2px;
+    position: relative;
+}
+
+.home h1 a:hover {
+    box-shadow: 0 -1.3em 0 #fa4545 inset;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.home h1 a:hover:after {
+    color: #2b303b;
+    transition: all 0;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    position: relative;
+    /* font-weight: 200; */
+}
+
+.home h3 {
+    /* font-weight: 200; */
+}
+
+.home h3 a {
+    box-shadow: 0 -0.06em 0 #CCCCCC inset;
+    transition: box-shadow 0.2s, color 0.2s, line-height 0.1s;
+    text-decoration: none;
+    line-height: 1;
+    color: #2b303b;
+    padding: 2px 2px 0 2px;
+    margin: -2px -2px 0 -2px;
+    position: relative;
+
+   /*  color: #cccccc; */
+}
+
+.home h3 a:hover {
+    box-shadow: 0 -1.3em 0 #CCCCCC inset;
+    line-height: 1.3;
+    color: #CB2D6F;
+}
+
+.home h3 a:hover:after {
+    color: #2b303b;
+    transition: all 0;
+}
+
+.home .darr {
+    font-weight: 300;
+    font-size: 2.5rem;
+    display: inline-block;
+    width: 36px;
+    color: #d3d7de;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.15s;
+    margin-bottom: 6rem;
+}
+.home .darr:hover {
+    cursor: pointer;
+    color: #CB2D6F;
+}
+
+.home section {
+    max-width: 1200px;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .home section {
+        padding: 1rem;
+    }
+}
+
+.home #about {
+    /* background: #605b44; */
+    background: #e6e6e6;
+    /*  background: #00c800; */
+    /* background: #0000ff; */
+    background: #501f3a;
+    background: #14a098;
+    background: #501f3a;
+    background: #14a098;
+    background: #cb2d6f;
+    /* padding-top: 18rem;
+    padding-bottom: 18rem; */
+
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+
+    padding-top: 11rem;
+    padding-bottom: 12.5rem;
+}
+
+.home #about section {
+    padding-bottom: 0;
+}
+
+.home #about h2 {
+    /* color: #2b303b; */
+    color: #fff;
+}
+
+.home #about h3 {
+    /* color: #fff; */
+    /*  color: #605b44; */
+    color: #3b362b;
+    color: #cccccc;
+    color: #14a098;
+    color: #0f292f;
+
+    /* color: #fff; */
+    /* font-weight: 800; */
+
+    border: 4px solid;
+
+    border-radius: 11px;
+    padding: 35px;
+}
+
+.home #projects {
+    background: #2b303b;
+}
+
+.home #projects section {
+    padding-bottom: 0;
+}
+
+.home #projects h2 {
+    color: #fff;
+}
+
+.home #projects dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 800px;
+}
+
+.home #projects dt {
+    color: #fff;
+    margin-bottom: -1.38rem;
+}
+
+.home #projects dd {
+    margin: 0 0 0 6rem;
+    padding: 0 0 2rem calc(3rem + 10px);
+    border-left: 2px solid #606b81;
+    position: relative;
+    color: #606b81;
+}
+
+@media (max-width: 640px) {
+    .home #projects dd {
+        margin: 0 0 0 4rem;
+        padding: 0 0 2rem 2rem;
+    }
+}
+
+.home #projects dd:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #2b303b;
+    position: absolute;
+    left: -8px;
+    top: 9px;
+    border: 2px solid #606b81;
+    border-radius: 1rem;
+}
+
+@media (max-width: 640px) {
+    .home #projects dd:before {
+        left: -8px;
+        top: 5px;
+    }
+}
+
+.home #projects dd a {
+    box-shadow: 0 -0.06em 0 #8469c7 inset;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 2px 0 2px;
+    margin: -2px -2px 0 -2px;
+}
+
+.home #projects dd a:hover {
+    box-shadow: 0 -1.3em 0 #2b9cd4 inset;
+    color: #090a0c !important;
+}
+
+.home #press {
+    background: #f7f6f9;
+}
+
+.home #press ul {
+    list-style: none;
+    margin: -1em;
+    padding: 0;
+}
+
+@media (max-width: 640px) {
+    .home #press ul {
+        margin: 0;
+    }
+}
+
+.home #press li {
+    width: calc(33% - 2em);
+    margin: 1em;
+    transition: all 0.2s;
+}
+
+@media (max-width: 1000px) {
+    .home #press li {
+        margin: 1em 0.75em;
+        width: calc(50% - 1.5em);
+    }
+}
+
+@media (max-width: 600px) {
+    .home #press li {
+        margin: 0.5em 0;
+        width: 100%;
+    }
+}
+
+.home #press li a {
+    width: 100%;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(211, 215, 222, 0.5);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #2b303b;
+    text-decoration: none;
+    transition: all 0.2s;
+    min-height: 216px;
+}
+
+@media (max-width: 1000px) {
+    .home #press li a {
+        min-height: 192px;
+    }
+}
+
+@media (max-width: 640px) {
+    .home #press li a {
+        font-size: 1rem;
+        min-height: 0;
+    }
+}
+
+.home #press li a:hover {
+    box-shadow: 0 20px 40px #d3d7de;
+    color: #fa4545;
+}
+
+.home #press li a .press-logo {
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    .home #press li a .press-logo {
+        height: 80px;
+    }
+}
+
+.home #press li a img {
+    max-width: 60%;
+    display: block;
+    max-height: 30px;
+    margin: 1rem auto 2rem;
+}
+
+.home #colophon a,
+.home #colophon button,
+.home #contact a,
+.home #contact button,
+.home #privacy a,
+.home #privacy button,
+.home footer a,
+.home footer button {
+    box-shadow: 0 0 0 #8469c7 inset;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #8469c7;
+    padding: 2px 2px 0 3px;
+    margin: -2px -2px 0 -3px;
+}
+
+.home #colophon a:hover,
+.home #colophon button:hover,
+.home #contact a:hover,
+.home #contact button:hover,
+.home #privacy a:hover,
+.home #privacy button:hover,
+.home footer a:hover,
+.home footer button:hover {
+    box-shadow: 0 -1.3em 0 #fa4545 inset;
+    color: #fff;
+}
+
+.home #colophon,
+.home #privacy {
+    height: auto !important;
+}
+
+.home #colophon div,
+.home #privacy div {
+    max-width: 700px;
+    margin-top: 15vh;
+}
+
+.home footer {
+    /* max-width: 1200px; */
+    padding: 3rem;
+    margin: 0 auto;
+    background-color: #0F292F;
+}
+
+@media (max-width: 640px) {
+    .home footer {
+        padding: 1rem;
+    }
+}
+
+.home footer a.oldsite {
+    color: #d3d7de;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.home footer a.oldsite:hover {
+    color: #8469c7;
+    box-shadow: none;
+}
+
+.home footer nav.links a {
+    margin-left: 1rem;
+}
+
+.home #contact label {
+    font-weight: 700;
+    display: block;
+    margin-top: 1rem;
+}
+
+.home #contact input,
+.home #contact textarea {
+    display: block;
+    border-radius: 4px;
+    background: #f7f6f9;
+    box-shadow: 0 1px 6px rgba(211, 215, 222, 0.6) inset;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.2s;
+    outline: 0;
+}
+
+.home #contact input:active,
+.home #contact input:hover,
+.home #contact textarea:active,
+.home #contact textarea:hover {
+    border: none;
+}
+
+.home #contact input.form-field,
+.home #contact textarea.form-field {
+    position: absolute;
+    left: -100000px;
+}
+
+.home #contact textarea {
+    height: 8rem;
+}
+
+.home #contact button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    background: 0 0;
+    margin-top: 1rem;
+}
+
+.home #contact bddutton {
+    border-radius: 4px;
+    color: #fff;
+    background: #fa4545;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.home #contact bddutton:active,
+.home #contact bddutton:hover {
+    background: #8469c7;
+}
+
+.button-wrapper {
+    background: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* min-height: 100%; */
+    z-index: -1;
+}
+
+.button-wrapper-modern {
+    /* font-size: 16px; */
+    font-family: "zx_spectrum-7";
+}
+
+.btn {
+    border: 3px solid #1a1a1a;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: background 600ms ease, color 600ms ease;
+}
+
+input[type="radio"].toggle {
+    display: none;
+    & + label {
+        cursor: pointer;
+        /* min-width: 60px; */
+        &:hover {
+            background: none;
+            color: #1a1a1a;
+        }
+        &:after {
+            background: #1a1a1a;
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    &.toggle-left + label {
+        border-right: 0;
+        &:after {
+            left: 100%;
+        }
+    }
+    &.toggle-right + label {
+        margin-left: -5px;
+        &:after {
+            left: -100%;
+        }
+    }
+    &:checked + label {
+        cursor: default;
+        color: #fff;
+        transition: color 200ms;
+        &:after {
+            left: 0;
+        }
+    }
+}
+
+.hide-element {
+    /*  display: none!important;
+    position: absolute; */
+    opacity: 0 !important;
+}

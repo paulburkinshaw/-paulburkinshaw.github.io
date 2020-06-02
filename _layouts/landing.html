@@ -1,0 +1,199 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio, writing, projects, and other things.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="">
+  <meta property="og:title" content="Paul Burkinshaw - Software Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://wells.ee/apple-touch-icon.png">
+  <meta property="og:url" content="https://wells.ee/">
+  <meta property="og:description" content="Portfolio, writing, projects, and other things.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Portfolio, writing, projects, and other things.">
+  <meta name="twitter:title" content="Paul Burkinshaw - Software Developer">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:image" content="https://wells.ee/apple-touch-icon.png">
+  <meta name="twitter:creator" content="@">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" sizes="144x144">
+  <title>Paul Burkinshaw - Software Developer</title>
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"></script>
+
+</head>
+
+<body class="home">
+
+  <div class="sections">
+
+    <div class="loading-stripes">
+
+      <div class="loading-screen">
+        <div>
+          WEBSITE IS LOADING
+        </div>
+        <div class="please-wait">
+          PLEASE WAIT
+        </div>
+
+      </div>
+
+      <header class="animated fadeInUp flex flex-column">
+        <div class="flex-auto flex items-center">
+
+          <span class="spectrum-title" id="spectrum-title">
+            <h1>
+
+              Paul is a software developer
+              <br>
+              specialising in BASIC/z80 Assembly
+              <br>
+            </h1>
+          </span>
+
+          <span class="modern-title" id="modern-title">
+            <h1>
+
+              Paul is a software developer
+              specialising in <span id="c-sharp">c#/.net</span>
+              <br>
+            </h1>
+          </span>
+
+        </div>
+
+        <div class="button-wrapper">
+          <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+          <label for="toggle-on" class="btn">1984</label>
+          <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+          <label for="toggle-off" class="btn">2020</label>
+        </div>
+
+        <div>
+          <div class="flex-static darr animated" id="scrollme">↓</div>
+        </div>
+      </header>
+    </div>
+
+  </div>
+
+  <div class="modern-sections modern-sections-hide">
+
+    <div id="about" class="flex-auto flex items-center">
+      <section>
+        <h3>
+          I've been developing software since I learned to program my ZX Spectrum at 8 years old.
+          I've progressed to slighly more powerful machines since then but my love for coding remains.
+          <br>
+          <br>
+          In my professional career I've done remote work for agencies, consulted for startups,
+          and worked with small to large companies in the public and private sector creating products for both business
+          and consumer use.
+          <br>
+          <br>
+
+          If you're interested in collaborating or have a project you need help with feel free to get in <a target="new"
+            href="mailto:me@me.com">touch</a>
+
+        </h3>
+       <!--  <div class="flex-static darr animated fadeInDown delay-2" id="scrollme-about">↓</div> -->
+      </section>
+    </div>
+
+
+    <!-- <div id="press">
+      <section>
+        <h2>CONTACT</h2>
+
+      </section>
+
+    </div>
+ -->
+   
+    <!-- <footer class="flex">
+      <nav class="flex-auto">
+
+      </nav>
+      <nav class="links">
+        <a href="/colophon">Colophon</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </footer> -->
+
+  </div>
+
+  </div>
+
+  <script>
+
+
+    $("#scrollme").click(function () {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#about").offset().top
+      }, 1000);
+    });
+
+    $("#scrollme-about").click(function () {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#projects").offset().top
+      }, 1000);
+    });
+
+    $("#slider-checkbox").click(function () {
+      if ($(this).is(":checked")) {
+        /*  $( "body" ).addClass( "modernise" ); */
+        $("#spectrum-title").addClass("hide-spectrum-title");
+        $("#modern-title").addClass("show-modern-title");
+
+        $("body").addClass("modernise");
+      }
+    });
+
+    $("#toggle-off").click(function () {
+      if ($(this).is(":checked")) {
+        $("#spectrum-title").addClass("hide-spectrum-title");
+        $("#modern-title").addClass("show-modern-title");
+
+        $(".modern-sections").addClass("show-modern-sections");
+
+
+        $(".modern-sections").removeClass("modern-sections-hide");
+
+
+        $("#scrollme").removeClass("hide-element");
+        $("#scrollme").addClass("fadeInDown");
+        $(".home").addClass("modern-home");
+        $(".button-wrapper").addClass("button-wrapper-modern");
+        $("body").addClass("modernise");
+      }
+    });
+
+    $("#toggle-on").click(function () {
+      if ($(this).is(":checked")) {
+        $("#spectrum-title").removeClass("hide-spectrum-title");
+        $("#modern-title").removeClass("show-modern-title");
+        $(".modern-sections").removeClass("show-modern-sections");
+        $(".modern-sections").addClass("modern-sections-hide");
+        $("#scrollme").addClass("hide-element");
+        $("#scrollme").removeClass("fadeInDown");
+        $(".home").removeClass("modern-home");
+        $(".button-wrapper").removeClass("button-wrapper-modern");
+        $("body").removeClass("modernise");
+      }
+    });
+
+
+
+  </script>
+
+  <!-- Hi Mom -->
+
+
+</body>
+
+</html>
