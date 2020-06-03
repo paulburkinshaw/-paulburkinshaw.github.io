@@ -97,32 +97,48 @@
           <br>
 
           If you're interested in collaborating or have a project you need help with feel free to get in <a target="new"
-            href="mailto:me@me.com">touch</a>
+            href="mailto:paul.burkinshaw@gmail.com">touch</a>
 
         </h3>
-       <!--  <div class="flex-static darr animated fadeInDown delay-2" id="scrollme-about">↓</div> -->
+        <div>
+          <div class="flex-static darr animated" id="scrollme-about">↓</div>
+        </div>
+
       </section>
     </div>
 
 
-    <!-- <div id="press">
+    <div id="contact" class="flex-auto flex items-center">
+
+
       <section>
         <h2>CONTACT</h2>
+        <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".25s"
+          style="animation-delay: 0.25s;"></div>
 
+        <h5>Have a question or want to work together? </h5>
+        <form action="https://formspree.io/xzbjrgyw" method="POST" id="contact-form">
+          <label>
+
+            <input type="text" name="_replyto" placeholder="Enter email">
+          </label>
+          <label>
+
+            <textarea name="message" placeholder="Your Message"></textarea>
+          </label>
+
+          <!-- other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
       </section>
 
     </div>
- -->
-   
-    <!-- <footer class="flex">
-      <nav class="flex-auto">
 
-      </nav>
-      <nav class="links">
-        <a href="/colophon">Colophon</a>
-        <a href="/privacy">Privacy</a>
-      </nav>
-    </footer> -->
+
+    <footer class="flex">
+
+    </footer>
 
   </div>
 
@@ -139,13 +155,12 @@
 
     $("#scrollme-about").click(function () {
       $([document.documentElement, document.body]).animate({
-        scrollTop: $("#projects").offset().top
+        scrollTop: $("#contact").offset().top
       }, 1000);
     });
 
     $("#slider-checkbox").click(function () {
       if ($(this).is(":checked")) {
-        /*  $( "body" ).addClass( "modernise" ); */
         $("#spectrum-title").addClass("hide-spectrum-title");
         $("#modern-title").addClass("show-modern-title");
 
@@ -157,13 +172,8 @@
       if ($(this).is(":checked")) {
         $("#spectrum-title").addClass("hide-spectrum-title");
         $("#modern-title").addClass("show-modern-title");
-
         $(".modern-sections").addClass("show-modern-sections");
-
-
         $(".modern-sections").removeClass("modern-sections-hide");
-
-
         $("#scrollme").removeClass("hide-element");
         $("#scrollme").addClass("fadeInDown");
         $(".home").addClass("modern-home");
@@ -187,10 +197,7 @@
     });
 
 
-
   </script>
-
-  <!-- Hi Mom -->
 
 
 </body>
