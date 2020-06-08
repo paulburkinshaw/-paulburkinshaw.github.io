@@ -80,10 +80,8 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-   
+    width: 0px; /* Remove scrollbar space */
 }
-
 
 @media (max-width: 640px) {
     html {
@@ -112,12 +110,9 @@ body {
     animation: font-transition 2s linear forwards;
     animation-timing-function: ease-in;
     animation-delay: 3s;
-
-    
 }
 
 .sections {
-    
 }
 
 .modernise {
@@ -328,14 +323,16 @@ a {
 } */
 
 .header-bar {
-    color: #CCCCCC;
+    color: #cccccc;
     height: 4px;
     /* margin: 25px 0 75px 0; */
     width: 70px;
-    background: #CCCCCC;
+    background: #cccccc;
     /* margin: 25px 0 40px 0; */
     width: 110px;
     margin: auto;
+    background: #CB2D6A;
+    background: #14A098;
 }
 
 .home {
@@ -422,7 +419,7 @@ a {
 }
 
 .home h3 a {
-    box-shadow: 0 -0.06em 0 #CCCCCC inset;
+    box-shadow: 0 -0.06em 0 #cccccc inset;
     transition: box-shadow 0.2s, color 0.2s, line-height 0.1s;
     text-decoration: none;
     line-height: 1;
@@ -431,13 +428,13 @@ a {
     margin: -2px -2px 0 -2px;
     position: relative;
 
-   /*  color: #cccccc; */
+     color: #CCCCCC;
 }
 
 .home h3 a:hover {
-    box-shadow: 0 -1.3em 0 #CCCCCC inset;
+    box-shadow: 0 -1.3em 0 #cccccc inset;
     line-height: 1.3;
-    color: #CB2D6F;
+    color: #cb2d6f;
 }
 
 .home h3 a:hover:after {
@@ -460,21 +457,19 @@ a {
 }
 .home .darr:hover {
     cursor: pointer;
-    color: #CB2D6F;
+    color: #cb2d6f;
 }
 
 .home #about .darr {
     /* margin-bottom: 0rem; */
     /* position: relative;
     top: 10rem; */
-
 }
 
 .home #about .darr:hover {
     cursor: pointer;
-    color: #14A098;
+    color: #14a098;
 }
-
 
 .home section {
     max-width: 1200px;
@@ -496,8 +491,9 @@ a {
     background: #501f3a;
     background: #14a098;
     background: #501f3a;
-    background: #14a098;
     background: #cb2d6f;
+    background: #0F292F;
+    background: #14a098;
     height: 100vh;
     /* padding-top: 18rem;
     padding-bottom: 18rem; */
@@ -515,235 +511,60 @@ a {
 }
 
 .home #about h2 {
-    /* color: #2b303b; */
     color: #fff;
-}
-
-.home #about h3 {
-    /* color: #fff; */
-    /*  color: #605b44; */
-    color: #3b362b;
-    color: #cccccc;
-    color: #14a098;
-    color: #0f292f;
-
-    /* color: #fff; */
-    /* font-weight: 800; */
-
-    border: 4px solid;
-
-    border-radius: 11px;
-    padding: 35px;
-}
-
-
-/* .home #contact-form {
-    background: #2b303b;
-}
-
-.home #contact-form section {
-    padding-bottom: 0;
-}
-
-.home #contact-form h2 {
-    color: #fff;
-}
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.home #projects {
-    background: #2b303b;
-}
-
-.home #projects section {
-    padding-bottom: 0;
-}
-
-.home #projects h2 {
-    color: #fff;
-}
-
-.home #projects dl {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    max-width: 800px;
-}
-
-.home #projects dt {
-    color: #fff;
-    margin-bottom: -1.38rem;
-}
-
-.home #projects dd {
-    margin: 0 0 0 6rem;
-    padding: 0 0 2rem calc(3rem + 10px);
-    border-left: 2px solid #606b81;
-    position: relative;
-    color: #606b81;
-}
-
-@media (max-width: 640px) {
-    .home #projects dd {
-        margin: 0 0 0 4rem;
-        padding: 0 0 2rem 2rem;
-    }
-}
-
-.home #projects dd:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: #2b303b;
-    position: absolute;
-    left: -8px;
-    top: 9px;
-    border: 2px solid #606b81;
-    border-radius: 1rem;
-}
-
-@media (max-width: 640px) {
-    .home #projects dd:before {
-        left: -8px;
-        top: 5px;
-    }
-}
-
-.home #projects dd a {
-    box-shadow: 0 -0.06em 0 #8469c7 inset;
-    transition: all 0.2s;
-    text-decoration: none;
-    color: #fff;
-    padding: 2px 2px 0 2px;
-    margin: -2px -2px 0 -2px;
-}
-
-.home #projects dd a:hover {
-    box-shadow: 0 -1.3em 0 #2b9cd4 inset;
-    color: #090a0c !important;
-}
-
-.home #press {
-    background: #f7f6f9;
-}
-
-.home #press ul {
-    list-style: none;
-    margin: -1em;
-    padding: 0;
-}
-
-@media (max-width: 640px) {
-    .home #press ul {
-        margin: 0;
-    }
-}
-
-.home #press li {
-    width: calc(33% - 2em);
-    margin: 1em;
-    transition: all 0.2s;
-}
-
-@media (max-width: 1000px) {
-    .home #press li {
-        margin: 1em 0.75em;
-        width: calc(50% - 1.5em);
-    }
-}
-
-@media (max-width: 600px) {
-    .home #press li {
-        margin: 0.5em 0;
-        width: 100%;
-    }
-}
-
-.home #press li a {
-    width: 100%;
-    display: block;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(211, 215, 222, 0.5);
-    border-radius: 8px;
-    font-size: 0.8rem;
-    padding: 1rem;
-    color: #2b303b;
-    text-decoration: none;
-    transition: all 0.2s;
-    min-height: 216px;
-}
-
-@media (max-width: 1000px) {
-    .home #press li a {
-        min-height: 192px;
-    }
-}
-
-@media (max-width: 640px) {
-    .home #press li a {
-        font-size: 1rem;
-        min-height: 0;
-    }
-}
-
-.home #press li a:hover {
-    box-shadow: 0 20px 40px #d3d7de;
-    color: #fa4545;
-}
-
-.home #press li a .press-logo {
-    height: 100px;
-}
-
-@media (max-width: 600px) {
-    .home #press li a .press-logo {
-        height: 80px;
-    }
-}
-
-.home #press li a img {
-    max-width: 60%;
-    display: block;
-    max-height: 30px;
-    margin: 1rem auto 2rem;
-}
- */
-
- .home #contact {
-
-    background-color: #14A098;
-
- }
-
- .home #contact #contact-form {
-    min-width: 500px;
- }
-
- .home #contact h2 {
-    color: #CCCCCC;
     margin: 0px;
     text-align: center;
- }
-
- .home #contact h5 {
-   text-align: center;
-   color: #501F3A;
- }
+}
 
 
+.home #about h3 {
+
+    color: #3b362b;
+    color: #14a098;
+    color: #0f292f;
+    color: #CCCCCC;
+    color: #fff;
+
+
+
+    /* border: 4px solid; */
+    /* border-radius: 11px; */
+   /*  padding: 35px; */
+   /*  border-color: #CCCCCC; */
+}
+
+.home #about .header-bar {
+    background: #fff;
+}
+
+
+.home #skills {
+    background: #fff;
+}
+
+.home #contact {
+    background-color: #14a098;
+    background: #CCCCCC;
+}
+
+.home #contact #contact-form {
+    min-width: 500px;
+}
+
+.home #contact h2 {
+    color: #cccccc;
+    color: #cb2d6f;
+    color: #14A098;
+    margin: 0px;
+    text-align: center;
+}
+
+.home #contact h5 {
+    text-align: center;
+    color: #501f3a;
+    color: #14A098;
+    color: #501f3a;
+}
 
 .home #colophon a,
 .home #colophon button,
@@ -784,12 +605,11 @@ a {
     margin-top: 15vh;
 }
 
-
 .home footer {
     /* max-width: 1200px; */
     padding: 3rem;
     margin: 0 auto;
-    background-color: #0F292F;
+    background-color: #0f292f;
 }
 
 @media (max-width: 640px) {
@@ -812,7 +632,7 @@ a {
 .home #contact textarea {
     display: block;
     border-radius: 4px;
-    background: #CCCCCC;
+    background: #ffffff;
     box-shadow: 0 1px 6px rgba(211, 215, 222, 0.6) inset;
     border: none;
     padding: 0.5rem;
@@ -849,7 +669,7 @@ a {
     margin-top: 1rem; */
 
     background: transparent;
-    color: #CCCCCC;
+   /*  color: #cccccc; */
     float: right;
     border: 2px solid;
     font-size: 12pt;
@@ -858,12 +678,16 @@ a {
     padding: 10px 30px;
     transition: all 0.5s;
     cursor: pointer;
+    color: #CB2D6F;
+    color: #14A098;
 
 }
 
 .home #contact button:hover {
-    background:#CB2D6F;
-    border-color: #CB2D6F;
+    background: #cb2d6f;
+    border-color: #cb2d6f;
+    background: #14A098;
+    border-color: #14A098;
     color: #fff;
 }
 
@@ -889,7 +713,6 @@ a {
 .home #contact bddutton:hover {
     background: #8469c7;
 }
-
 
 .button-wrapper {
     background: #fff;
