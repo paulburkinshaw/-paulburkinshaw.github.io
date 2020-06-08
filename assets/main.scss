@@ -190,6 +190,10 @@ body {
     color: #cb2d6f;
 }
 
+.home #about #area-of-expertise {
+    text-decoration: underline;
+}
+
 .modern-home {
     background-color: #ffcb9a;
 }
@@ -331,8 +335,8 @@ a {
     /* margin: 25px 0 40px 0; */
     width: 110px;
     margin: auto;
-    background: #CB2D6A;
-    background: #14A098;
+    background: #cb2d6a;
+    background: #14a098;
 }
 
 .home {
@@ -428,7 +432,7 @@ a {
     margin: -2px -2px 0 -2px;
     position: relative;
 
-     color: #CCCCCC;
+    color: #cccccc;
 }
 
 .home h3 a:hover {
@@ -492,7 +496,7 @@ a {
     background: #14a098;
     background: #501f3a;
     background: #cb2d6f;
-    background: #0F292F;
+    background: #0f292f;
     background: #14a098;
     height: 100vh;
     /* padding-top: 18rem;
@@ -516,21 +520,17 @@ a {
     text-align: center;
 }
 
-
 .home #about h3 {
-
     color: #3b362b;
     color: #14a098;
     color: #0f292f;
-    color: #CCCCCC;
+    color: #cccccc;
     color: #fff;
-
-
 
     /* border: 4px solid; */
     /* border-radius: 11px; */
-   /*  padding: 35px; */
-   /*  border-color: #CCCCCC; */
+    /*  padding: 35px; */
+    /*  border-color: #CCCCCC; */
 }
 
 .home #about .header-bar {
@@ -538,13 +538,82 @@ a {
 }
 
 
-.home #skills {
+.home #expertise {
     background: #fff;
+    padding-bottom: 12rem;
+}
+
+.home #expertise section {
+    max-width: 2200px;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.home #expertise h2 {
+    color: #cb2d6f;
+    margin: 0px;
+    text-align: center;
+}
+
+.home #expertise .header-bar {
+    background: #cb2d6f;
+}
+
+.home #expertise .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.home #expertise .flex-item {
+    padding: 2rem 8rem 0rem 0rem;
+}
+
+.home #expertise .circle {
+    height: 100px;
+    width: 100px;
+    background-color: #14a098;
+    border-radius: 50%;
+    position: relative;
+    left: 12%;
+}
+
+.home #expertise .circle .code {
+    font-size: 70px;
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 0px;
+}
+
+.home #expertise .expertise-item-label {
+    position: relative;
+    padding-left: 10px;
+    color: #cb2d6f;
+    font-weight: 400;
+}
+
+.home #expertise .expertise-item-description{
+    color: #14a098;
+    max-width: 126px;
+    font-size: 12pt;
+}
+
+.home #services {
+    background: #14a098;
+}
+
+.home #services h2 {
+    color: #fff;
 }
 
 .home #contact {
     background-color: #14a098;
-    background: #CCCCCC;
+    background: #cccccc;
 }
 
 .home #contact #contact-form {
@@ -554,7 +623,7 @@ a {
 .home #contact h2 {
     color: #cccccc;
     color: #cb2d6f;
-    color: #14A098;
+    color: #14a098;
     margin: 0px;
     text-align: center;
 }
@@ -562,7 +631,7 @@ a {
 .home #contact h5 {
     text-align: center;
     color: #501f3a;
-    color: #14A098;
+    color: #14a098;
     color: #501f3a;
 }
 
@@ -669,7 +738,7 @@ a {
     margin-top: 1rem; */
 
     background: transparent;
-   /*  color: #cccccc; */
+    /*  color: #cccccc; */
     float: right;
     border: 2px solid;
     font-size: 12pt;
@@ -678,16 +747,15 @@ a {
     padding: 10px 30px;
     transition: all 0.5s;
     cursor: pointer;
-    color: #CB2D6F;
-    color: #14A098;
-
+    color: #cb2d6f;
+    color: #14a098;
 }
 
 .home #contact button:hover {
     background: #cb2d6f;
     border-color: #cb2d6f;
-    background: #14A098;
-    border-color: #14A098;
+    background: #14a098;
+    border-color: #14a098;
     color: #fff;
 }
 
