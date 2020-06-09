@@ -751,18 +751,26 @@ a {
 
 .home #services ul {
     list-style: none;
-    padding-left: 40px;
+    padding-left: 14px;
     text-align: left;
     list-style-type: square;
     list-style-type: circle;
 }
 
+
 .home #services li {
     border: 0px;
     margin: 0px 0px 0px 0px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    font-weight: 600;
 }
+
+/* .home #services li:nth-child(2n) {
+    color: #fff;
+    font-weight: 600;
+ } */
+
 
 .home #services .circle .code {
     font-size: 70px;
@@ -776,6 +784,7 @@ a {
     color: #0f292f;
     font-size: 16px;
     color: #fff;
+    text-align: left;
 }
 
 .home #contact {
