@@ -519,8 +519,9 @@ a {
     background: #fff;
 }
 
-.expertise-mobile{
+#expertise-mobile {
     display: none;
+    height: 0px;
 }
 
 .expertise-full-stack {
@@ -535,7 +536,7 @@ a {
 }
 
 .expertise-full-stack-verical-line {
-    border-left: 4px solid #14A098;
+    border-left: 4px solid #14a098;
     height: 64px;
     position: relative;
     left: 50%;
@@ -555,28 +556,28 @@ a {
 }
 
 .expertise-full-stack-verical-line-frontend {
-    border-left: 4px solid #14A098;
+    border-left: 4px solid #14a098;
     height: 30px;
     position: relative;
     left: -85%;
     bottom: 0px;
 }
 .expertise-full-stack-verical-line-backend {
-    border-left: 4px solid #14A098;
+    border-left: 4px solid #14a098;
     height: 30px;
     position: relative;
     left: -57%;
     bottom: 0px;
 }
 .expertise-full-stack-verical-line-databases {
-    border-left: 4px solid #14A098;
+    border-left: 4px solid #14a098;
     height: 30px;
     position: relative;
     left: -29%;
     bottom: 0px;
 }
 .expertise-full-stack-verical-line-devops {
-    border-left: 4px solid #14A098;
+    border-left: 4px solid #14a098;
     height: 30px;
     position: relative;
     left: -2%;
@@ -628,7 +629,7 @@ a {
     background-color: #14a098;
     border-radius: 50%;
     position: relative;
-   /*  left: 12%; */
+    /*  left: 12%; */
 }
 
 .home #expertise .circle .code {
@@ -659,7 +660,121 @@ a {
     background: #14a098;
 }
 
+.home #services section {
+    max-width: 1484px;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
 .home #services h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.home #services .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.home #services .flex-item {
+    /* background: #cb2d6a;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #cccccc;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+    max-width: 13rem; */
+    background: #cb2d6a;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #cccccc;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+    max-width: 15rem;
+}
+
+.home #services .flex-item-last {
+    /* background: #cb2d6a;
+    border: 2px solid;
+    background: #cb2d6a;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0rem 1rem 0rem 1rem;
+    max-width: 13rem;
+    border-color: #cccccc; */
+    background: #cb2d6a;
+    border: 2px solid;
+    background: #cb2d6a;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0rem 1rem 0rem 1rem;
+    max-width: 15rem;
+    border-color: #cccccc;
+}
+
+.home #services .circle {
+    /* border-radius: 50%;
+    padding-top: 19px; */
+    border-radius: 50%;
+    padding-top: 0px;
+}
+
+.home #services .circle .code {
+    font-size: 70px;
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 0px;
+}
+
+.home #services .expertise-item-label {
+    position: relative;
+    color: #fff;
+    color: #501f3a;
+    font-weight: 400;
+    padding-top: 11px;
+    font-weight: 600;
+}
+
+.home #services .header-bar-service {
+    height: 2px;
+    width: 70px;
+    background: #fff;
+    width: 213px;
+    margin: auto;
+}
+
+.home #services ul {
+    list-style: none;
+    padding-left: 40px;
+    text-align: left;
+    list-style-type: square;
+    list-style-type: circle;
+}
+
+.home #services li {
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.home #services .circle .code {
+    font-size: 70px;
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 0px;
+}
+
+.home #services p {
+    color: #0f292f;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -901,10 +1016,7 @@ input[type="radio"].toggle {
 
 /* Responsive styles */
 
-
 @media (max-width: 3000px) {
-    
-   
 }
 
 // Anything between 640px and 800px
@@ -939,14 +1051,14 @@ input[type="radio"].toggle {
 
     //expertise section
 
-    .expertise-full-stack-verical-line {     
+    .expertise-full-stack-verical-line {
         height: 47px;
     }
 
     .expertise-full-stack-horizontal-line {
         width: 357px;
     }
-  
+
     .expertise-full-stack-verical-line-frontend {
         left: -82%;
     }
@@ -989,9 +1101,9 @@ input[type="radio"].toggle {
     .home header {
         height: 85vh;
     }
-    #expertise-mobile{
+    #expertise-mobile {
         display: flex;
-        background: #fff;  
+        background: #fff;
     }
     #expertise-mobile .expertise-mobile-image {
         background: url(../assets/images/expertise-img-small.png);
@@ -1004,7 +1116,7 @@ input[type="radio"].toggle {
         text-align: center;
     }
 
-    #expertise{
-       display: none;
+    #expertise {
+        display: none;
     }
 }
