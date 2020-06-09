@@ -112,12 +112,14 @@ ul {
 }
 
 li {
-    padding: 4px;
+    padding: 2px;
     border: 1px solid;
-    margin: 4px;
-    background: #CB2D6F;
+    border-color: #cccccc;
+    margin: 0px 0px 0px 0px;
+    background: #cb2d6f;
     font-size: 13px;
     color: #fff;
+    border-radius: 4px;
 }
 
 .modernise {
@@ -517,6 +519,66 @@ a {
     background: #fff;
 }
 
+.expertise-full-stack {
+    padding: 4px;
+    /* border: 2px solid; */
+    border-radius: 5px;
+    background: #cb2d6f;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 77px;
+    text-align: center;
+}
+
+.expertise-full-stack-verical-line {
+    border-left: 4px solid #14A098;
+    height: 64px;
+    position: relative;
+    left: 50%;
+    bottom: 0px;
+}
+
+.expertise-container {
+    justify-content: center;
+}
+
+.expertise-full-stack-horizontal-line {
+    background: #cb2d6a;
+    background: #14a098;
+    height: 4px;
+    margin-top: 0px;
+    width: 564px;
+}
+
+.expertise-full-stack-verical-line-frontend {
+    border-left: 4px solid #14A098;
+    height: 30px;
+    position: relative;
+    left: -85%;
+    bottom: 0px;
+}
+.expertise-full-stack-verical-line-backend {
+    border-left: 4px solid #14A098;
+    height: 30px;
+    position: relative;
+    left: -57%;
+    bottom: 0px;
+}
+.expertise-full-stack-verical-line-databases {
+    border-left: 4px solid #14A098;
+    height: 30px;
+    position: relative;
+    left: -29%;
+    bottom: 0px;
+}
+.expertise-full-stack-verical-line-devops {
+    border-left: 4px solid #14A098;
+    height: 30px;
+    position: relative;
+    left: -2%;
+    bottom: 0px;
+}
+
 .home #expertise {
     background: #fff;
     padding-bottom: 12rem;
@@ -549,7 +611,11 @@ a {
 }
 
 .home #expertise .flex-item {
-    padding: 2rem 4rem 0rem 0rem;
+    padding: 0rem 4rem 0rem 0rem;
+}
+
+.home #expertise .flex-item-last {
+    padding: 0rem 0rem 0rem 0rem;
 }
 
 .home #expertise .circle {
@@ -558,7 +624,7 @@ a {
     background-color: #14a098;
     border-radius: 50%;
     position: relative;
-    left: 12%;
+   /*  left: 12%; */
 }
 
 .home #expertise .circle .code {
@@ -571,9 +637,9 @@ a {
 
 .home #expertise .expertise-item-label {
     position: relative;
-    color: #501F3A;
+    color: #501f3a;
     font-weight: 400;
-    left: 11px;
+    /* left: 11px; */
     padding-top: 7px;
     font-weight: 600;
     font-size: 18px;
@@ -582,9 +648,8 @@ a {
 .home #expertise .expertise-item-description {
     max-width: 126px;
     position: relative;
-    left: 10px;
+    /* left: 10px; */
 }
-
 
 .home #services {
     background: #14a098;
@@ -863,10 +928,12 @@ input[type="radio"].toggle {
     .home #expertise .flex-item {
         padding: 1rem 2rem 0rem 0rem;
     }
+    .home #expertise .flex-item-last {
+        padding: 1rem 0rem 0rem 0rem;
+    }
     .home #expertise .circle {
         height: 50px;
         width: 50px;
-        
     }
     .home #expertise .circle .code {
         font-size: 2rem;
