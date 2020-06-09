@@ -904,25 +904,7 @@ input[type="radio"].toggle {
 
 @media (max-width: 3000px) {
     
-    #expertise-mobile{
-        display: flex;
-        background: #fff;
-       
-    }
-    #expertise-mobile .expertise-mobile-image {
-        background: url(../assets/images/expertise-img.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100%;
-        height: 54vh;
-        width: 100vh;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #expertise{
-       display: none;
-    }
+   
 }
 
 // Anything between 640px and 800px
@@ -987,11 +969,22 @@ input[type="radio"].toggle {
     .home header {
         height: 85vh;
     }
-    .expertise-mobile{
+    #expertise-mobile{
         display: flex;
-        background: url("../assets/images/expertise-img.png")
+        background: #fff;  
     }
-    .expertise{
+    #expertise-mobile .expertise-mobile-image {
+        background: url(../assets/images/expertise-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        height: 54vh;
+        width: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #expertise{
        display: none;
     }
 }
