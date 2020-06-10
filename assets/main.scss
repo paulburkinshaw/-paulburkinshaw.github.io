@@ -1118,22 +1118,26 @@ footer .footnote {
 
     //expertise section
 
+    .expertise-container {
+        min-width: 436px;
+    }
+
     .expertise-full-stack-verical-line {
         height: 47px;
     }
 
     .expertise-full-stack-horizontal-line {
-        width: 357px;
+        width: 347px;
     }
 
     .expertise-full-stack-verical-line-frontend {
-        left: -82%;
+        left: -80%;
     }
     .expertise-full-stack-verical-line-backend {
-        left: -56%;
+        left: -53%;
     }
     .expertise-full-stack-verical-line-databases {
-        left: -29%;
+        left: -27%;
     }
     .expertise-full-stack-verical-line-devops {
         left: -3%;
@@ -1207,6 +1211,11 @@ footer .footnote {
         padding: 0rem;
         margin: 0 auto;
     }
+
+    .expertise-container {
+        min-width: 0px;
+    }
+
     .expertise-full-stack {
         font-size: 18px;
     }
