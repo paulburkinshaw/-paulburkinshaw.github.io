@@ -1218,27 +1218,37 @@ footer .footnote {
     }
 
     .expertise-full-stack-horizontal-line {
-        position: relative;
+        /* position: relative;
         width: 270px;
-        right: -32px;
+        right: -32px; */
+
+        position: relative;
+        width: 275px;
+        right: -37px;
     }
     .expertise-full-stack-verical-line-frontend {
+       /*  left: -238px; */
         left: -238px;
     }
     .expertise-full-stack-verical-line-backend {
-        left: -148px;
+       /*  left: -148px; */
+        left: -151px;
     }
     .expertise-full-stack-verical-line-databases {
-        left: -66px;
+        /* left: -66px; */
+        left: -64px;
     }
     .expertise-full-stack-verical-line-devops {
-        left: 16px;
+       /*  left: 16px; */
+        left: 21px;
     }
     .home #expertise .flex-item {
-        padding: 0rem 1rem 0rem 0rem;
+        /* padding: 0rem 1rem 0rem 0rem; */
+        padding: 0px 17px 0px 0px;
     }
     .home #expertise .flex-item-last {
-        padding: 0rem 1rem 0rem 0rem;
+        /* padding: 0rem 1rem 0rem 0rem; */
+        padding: 0px 0px 0px 0px;
     }
     .home #expertise .expertise-item-label {
         font-size: 16px;
