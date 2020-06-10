@@ -656,6 +656,10 @@ a {
     /* left: 10px; */
 }
 
+#mob-only{
+    display: none;
+}
+
 .home #services {
     background: #14a098;
     min-height: 100vh;
@@ -1186,6 +1190,10 @@ footer .footnote {
 
 // Anything up to 420px
 @media (max-width: 420px) {
+    #mob-only{
+        display: block;
+    }
+
     html {
         font-size: 14px;
     }
