@@ -159,6 +159,10 @@ li {
     animation-timing-function: step-end;
 }
 
+#loading-screen-message {
+    margin-bottom: 1rem;
+}
+
 .please-wait {
     background-color: white;
     color: black;
@@ -1186,6 +1190,14 @@ footer .footnote {
 @media (max-width: 420px) {
     html {
         font-size: 14px;
+    }
+
+    .loading-screen {   
+        font-size: 45px;
+        margin: 12% 4% 4% 4%;
+    }
+    #loading-screen-message {
+        margin-bottom: 1rem;
     }
 
     .home header {
