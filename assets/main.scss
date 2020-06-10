@@ -353,8 +353,9 @@ a {
     max-width: 1200px;
     padding: 0 3rem;
     margin: 0 auto;
-    height: 99vh;
-    min-height: 500px;
+   /*  height: 99vh;
+    min-height: 500px; */
+    min-height: 100vh;
 }
 
 .home h1 {
@@ -480,7 +481,7 @@ a {
     background: #cb2d6f;
     background: #0f292f;
     background: #14a098;
-    height: 100vh;
+    min-height: 100vh;
     /* padding-top: 18rem;
     padding-bottom: 18rem; */
 
@@ -519,10 +520,11 @@ a {
     background: #fff;
 }
 
-#expertise-mobile {
-    display: none;
-    height: 0px;
+.home #expertise {
+    background: #fff;
+    min-height: 100vh;
 }
+
 
 .expertise-full-stack {
     padding: 4px;
@@ -531,7 +533,7 @@ a {
     background: #cb2d6f;
     font-size: 22px;
     color: #fff;
-    margin-top: 77px;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -582,11 +584,6 @@ a {
     position: relative;
     left: -2%;
     bottom: 0px;
-}
-
-.home #expertise {
-    background: #fff;
-    padding-bottom: 12rem;
 }
 
 .home #expertise section {
@@ -658,6 +655,7 @@ a {
 
 .home #services {
     background: #14a098;
+    min-height: 100vh;
 }
 
 .home #services section {
@@ -669,13 +667,18 @@ a {
 .home #services h2 {
     color: #fff;
     text-align: center;
+    margin: 0px;
+}
+
+.home #services .header-bar {
+    background: #fff;
 }
 
 .home #services .flex-container {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    margin-top: 2rem;
     list-style: none;
     text-align: center;
     justify-content: center;
@@ -1063,11 +1066,7 @@ footer .footnote {
 /* Responsive styles */
 
 @media (max-width: 1024px) {
-    .home #services section {
-        /*  max-width: 1024px;
-        padding: 3rem;
-        margin: 0 auto; */
-    }
+   
 }
 
 // Anything between 640px and 800px
@@ -1076,8 +1075,8 @@ footer .footnote {
         font-size: 18px;
     }
     .home header {
-        padding: 0 1rem;
-        min-height: 400px;
+       /*  padding: 0 1rem;
+        min-height: 400px; */
     }
     .expertise-full-stack-horizontal-line {
         background: #cb2d6a;
@@ -1255,7 +1254,7 @@ footer .footnote {
     }
     .home #contact button {
         font-size: 10pt;
-        padding: 4px 20px; 
+        padding: 4px 20px;
     }
 
     footer .back-to-top {
