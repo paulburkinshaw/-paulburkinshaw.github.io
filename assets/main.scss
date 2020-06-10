@@ -357,7 +357,7 @@ a {
     max-width: 1200px;
     padding: 0 3rem;
     margin: 0 auto;
-   /*  height: 99vh;
+    /*  height: 99vh;
     min-height: 500px; */
     height: 99vh;
 }
@@ -528,7 +528,6 @@ a {
     background: #fff;
     min-height: 100vh;
 }
-
 
 .expertise-full-stack {
     padding: 4px;
@@ -1070,7 +1069,6 @@ footer .footnote {
 /* Responsive styles */
 
 @media (max-width: 1024px) {
-   
 }
 
 // Anything between 640px and 800px
@@ -1079,7 +1077,7 @@ footer .footnote {
         font-size: 18px;
     }
     .home header {
-       /*  padding: 0 1rem;
+        /*  padding: 0 1rem;
         min-height: 400px; */
     }
     .expertise-full-stack-horizontal-line {
@@ -1192,21 +1190,21 @@ footer .footnote {
         font-size: 14px;
     }
 
-    .loading-screen {   
+    .loading-screen {
         font-size: 35px;
         margin: 11% 4% 4% 4%;
     }
     #loading-screen-message {
         margin-bottom: 1rem;
     }
-    
+
     .home header {
         height: 85vh;
     }
 
     .home #expertise section {
         max-width: 400px;
-        padding: 3rem;
+        padding: 0rem;
         margin: 0 auto;
     }
     .expertise-full-stack {
@@ -1216,21 +1214,20 @@ footer .footnote {
         height: 33px;
     }
     .expertise-full-stack-horizontal-line {
-        width: 258px;
-        right: -3px;
+        width: 262px;
         position: relative;
     }
     .expertise-full-stack-verical-line-frontend {
-        left: -81%;
+        left: -76%;
     }
     .expertise-full-stack-verical-line-backend {
-        left: -56%;
+        left: -51%;
     }
     .expertise-full-stack-verical-line-databases {
-        left: -31%;
+        left: -27%;
     }
     .expertise-full-stack-verical-line-devops {
-        left: -3%;
+        left: -4%;
     }
     .home #expertise .flex-item {
         padding: 0rem 1rem 0rem 0rem;
