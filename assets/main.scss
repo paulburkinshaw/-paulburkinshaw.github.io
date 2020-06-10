@@ -661,7 +661,7 @@ a {
 }
 
 .home #services section {
-    max-width: 1484px;
+    max-width: 1500px;
     padding: 3rem;
     margin: 0 auto;
 }
@@ -673,7 +673,7 @@ a {
 
 .home #services .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -1025,12 +1025,12 @@ footer .back-to-top {
     cursor: pointer;
     font-size: 57pt;
     height: 50px;
-    left: 0;
+    left: 47%;
     line-height: 40pt;
     margin: 0 auto;
-    position: absolute;
+    position: relative;
     right: 0;
-    top: 3924px;
+    top: -92px;
     width: 47px;
     color: #cb2d6f;
 }
@@ -1039,7 +1039,7 @@ footer .links {
     text-align: center;
 }
 
-footer .links a{
+footer .links a {
     color: #cb2d6a;
     margin: 0rem 2rem 0rem 0rem;
 }
@@ -1060,11 +1060,14 @@ footer .footnote {
     margin-top: 30px;
 }
 
-
-
 /* Responsive styles */
 
-@media (max-width: 3000px) {
+@media (max-width: 1024px) {
+    .home #services section {
+        /*  max-width: 1024px;
+        padding: 3rem;
+        margin: 0 auto; */
+    }
 }
 
 // Anything between 640px and 800px
@@ -1082,6 +1085,21 @@ footer .footnote {
         height: 4px;
         margin-top: 0px;
         width: 524px;
+    }
+
+    .home #services .header-bar-service {
+        width: 160px;
+    }
+    .home #services p {
+        font-size: 14px;
+    }
+    .home #services li {
+        font-size: 14px;
+    }
+
+    footer .back-to-top {
+        left: 43%;
+        top: -80px;
     }
 }
 
@@ -1138,33 +1156,106 @@ footer .footnote {
         left: -1px;
     }
 
+    .home #services .circle .code {
+        font-size: 40px;
+    }
+    .home #services .expertise-item-label {
+        font-size: 14px;
+    }
+    .home #services .header-bar-service {
+        width: 127px;
+    }
+    .home #services p {
+        font-size: 12px;
+    }
+    .home #services li {
+        font-size: 12px;
+    }
+
     //footer
     .home footer {
         padding: 1rem;
+    }
+    footer .back-to-top {
+        font-size: 45pt;
+        left: 43%;
+        top: -42px;
     }
 }
 
 // Anything up to 420px
 @media (max-width: 420px) {
+    html {
+        font-size: 14px;
+    }
+
     .home header {
         height: 85vh;
     }
-    #expertise-mobile {
-        display: flex;
-        background: #fff;
+
+    .home #expertise section {
+        max-width: 400px;
+        padding: 3rem;
+        margin: 0 auto;
     }
-    #expertise-mobile .expertise-mobile-image {
-        background: url(../assets/images/expertise-img-small.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100%;
-        height: 54vh;
-        width: 100vh;
-        justify-content: center;
-        text-align: center;
+    .expertise-full-stack {
+        font-size: 18px;
+    }
+    .expertise-full-stack-verical-line {
+        height: 33px;
+    }
+    .expertise-full-stack-horizontal-line {
+        width: 258px;
+        right: -10px;
+        position: relative;
+    }
+    .expertise-full-stack-verical-line-frontend {
+        left: -79%;
+    }
+    .expertise-full-stack-verical-line-backend {
+        left: -52%;
+    }
+    .expertise-full-stack-verical-line-databases {
+        left: -28%;
+    }
+    .expertise-full-stack-verical-line-devops {
+        left: -1%;
+    }
+    .home #expertise .flex-item {
+        padding: 0rem 1rem 0rem 0rem;
+    }
+    .home #expertise .flex-item-last {
+    }
+    .home #expertise .expertise-item-label {
+        font-size: 16px;
+    }
+    .home #expertise li {
+        font-size: 11px;
     }
 
-    #expertise {
-        display: none;
+    .home #services .circle .code {
+        font-size: 30px;
+    }
+    .home #services .expertise-item-label {
+        font-size: 14px;
+    }
+    .home #services .header-bar-service {
+        width: 105px;
+    }
+    .home #services p {
+        font-size: 12px;
+    }
+    .home #services li {
+        font-size: 12px;
+    }
+
+    .home #contact #contact-form {
+        min-width: 348px;
+    }
+
+    footer .back-to-top {
+        left: 43%;
+        top: -39px;
+        font-size: 44px;
     }
 }
