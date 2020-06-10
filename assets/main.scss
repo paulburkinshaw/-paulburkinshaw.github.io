@@ -155,8 +155,8 @@ li {
     justify-content: center; /* align items vertically, in this case */
     align-items: center; /* align items horizontally, in this case */
 
-    animation: load-complete 3s forwards;
-    animation-timing-function: step-end;
+   /*  animation: load-complete 3s forwards;
+    animation-timing-function: step-end; */
 }
 
 #loading-screen-message {
@@ -1193,8 +1193,8 @@ footer .footnote {
     }
 
     .loading-screen {   
-        font-size: 45px;
-        margin: 12% 4% 4% 4%;
+        font-size: 35px;
+        margin: 11% 4% 4% 4%;
     }
     #loading-screen-message {
         margin-bottom: 1rem;
