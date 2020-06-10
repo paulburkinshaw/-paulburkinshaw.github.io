@@ -656,7 +656,7 @@ a {
     /* left: 10px; */
 }
 
-#mob-only{
+#mob-only {
     display: none;
 }
 
@@ -1190,7 +1190,7 @@ footer .footnote {
 
 // Anything up to 420px
 @media (max-width: 420px) {
-    #mob-only{
+    #mob-only {
         display: block;
     }
 
@@ -1226,21 +1226,21 @@ footer .footnote {
     }
 
     .expertise-full-stack-horizontal-line {
-        width: 19rem;
         position: relative;
-        right: -10%;
+        width: 270px;
+        right: -32px;
     }
     .expertise-full-stack-verical-line-frontend {
-        left: -66%;
+        left: -238px;
     }
     .expertise-full-stack-verical-line-backend {
-        left: -41%;
+        left: -148px;
     }
     .expertise-full-stack-verical-line-databases {
-        left: -17%;
+        left: -66px;
     }
     .expertise-full-stack-verical-line-devops {
-        left: 6%;
+        left: 16px;
     }
     .home #expertise .flex-item {
         padding: 0rem 1rem 0rem 0rem;
