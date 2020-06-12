@@ -203,6 +203,7 @@ li {
 
 .home #about #area-of-expertise {
     text-decoration: underline;
+    color: #CB2D6F;
 }
 
 .modern-home {
@@ -346,7 +347,7 @@ a {
     /* margin: 25px 0 40px 0; */
     width: 110px;
     margin: auto;
-    background: #cb2d6a;
+    background: #CB2D6F;
     background: #14a098;
 }
 
@@ -485,6 +486,7 @@ a {
     background: #cb2d6f;
     background: #0f292f;
     background: #14a098;
+    background: #CCCCCC;
     min-height: 100vh;
     /* padding-top: 18rem;
     padding-bottom: 18rem; */
@@ -513,6 +515,8 @@ a {
     color: #0f292f;
     color: #cccccc;
     color: #fff;
+    color: #0f292f;
+    font-weight: 800;
 
     /* border: 4px solid; */
     /* border-radius: 11px; */
@@ -522,6 +526,7 @@ a {
 
 .home #about .header-bar {
     background: #fff;
+    background: #0F292F;
 }
 
 .home #expertise {
@@ -533,8 +538,8 @@ a {
     padding: 4px;
     /* border: 2px solid; */
     border-radius: 5px;
-    background: #cb2d6f;
     background: #14A098;
+    background: #cb2d6f;
     font-size: 22px;
     color: #fff;
     margin-top: 2rem;
@@ -554,7 +559,7 @@ a {
 }
 
 .expertise-full-stack-horizontal-line {
-    background: #cb2d6a;
+    background: #CB2D6F;
     background: #14a098;
     height: 4px;
     margin-top: 0px;
@@ -598,12 +603,15 @@ a {
 
 .home #expertise h2 {
     color: #cb2d6f;
+    color: #0F292F;
     margin: 0px;
     text-align: center;
 }
 
 .home #expertise .header-bar {
     background: #cb2d6f;
+    background: #0F292F;
+    
 }
 
 .home #expertise .flex-container {
@@ -659,6 +667,7 @@ a {
 
 .home #services {
     background: #14a098;
+    background: #CCCCCC;
     min-height: 100vh;
 }
 
@@ -670,12 +679,14 @@ a {
 
 .home #services h2 {
     color: #fff;
+    color: #0F292F;
     text-align: center;
     margin: 0px;
 }
 
 .home #services .header-bar {
     background: #fff;
+    background: #0F292F;
 }
 
 .home #services .flex-container {
@@ -689,14 +700,14 @@ a {
 }
 
 .home #services .flex-item {
-    /* background: #cb2d6a;
+    /* background: #CB2D6F;
     border: 1px solid;
     border-radius: 4px;
     border-color: #cccccc;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 1rem 0rem 1rem;
     max-width: 13rem; */
-    background: #cb2d6a;
+    background: #CB2D6F;
     border: 1px solid;
     border-radius: 4px;
     border-color: #cccccc;
@@ -706,17 +717,17 @@ a {
 }
 
 .home #services .flex-item-last {
-    /* background: #cb2d6a;
+    /* background: #CB2D6F;
     border: 2px solid;
-    background: #cb2d6a;
+    background: #CB2D6F;
     border: 1px solid;
     border-radius: 4px;
     padding: 0rem 1rem 0rem 1rem;
     max-width: 13rem;
     border-color: #cccccc; */
-    background: #cb2d6a;
+    background: #CB2D6F;
     border: 2px solid;
-    background: #cb2d6a;
+    background: #CB2D6F;
     border: 1px solid;
     border-radius: 4px;
     padding: 0rem 1rem 0rem 1rem;
@@ -813,7 +824,7 @@ a {
 }
 
 .home #contact .header-bar {
-    background: #cb2d6a;
+    background: #CB2D6F;
 }
 
 .home #contact h5 {
@@ -1047,7 +1058,7 @@ footer .links {
 }
 
 footer .links a {
-    color: #cb2d6a;
+    color: #CB2D6F;
     margin: 0rem 2rem 0rem 0rem;
 }
 
@@ -1082,7 +1093,7 @@ footer .footnote {
         min-height: 400px; */
     }
     .expertise-full-stack-horizontal-line {
-        background: #cb2d6a;
+        background: #CB2D6F;
         background: #14a098;
         height: 4px;
         margin-top: 0px;
