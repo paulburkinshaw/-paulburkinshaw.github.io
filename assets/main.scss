@@ -467,7 +467,7 @@ a {
 
 .home #about .darr:hover {
     cursor: pointer;
-    color: #14a098;
+    color: #cb2d6f;
 }
 
 .home section {
@@ -488,6 +488,7 @@ a {
     background: #0f292f;
     background: #14a098;
     background: #CCCCCC;
+    background: #0f292f;
     min-height: 100vh;
     /* padding-top: 18rem;
     padding-bottom: 18rem; */
@@ -507,6 +508,7 @@ a {
 .home #about h2 {
     color: #fff;
     color: #0f292f;
+    color: #CCCCCC;
     margin: 0px;
     text-align: center;
     font-weight: 800;
@@ -516,9 +518,9 @@ a {
     color: #3b362b;
     color: #14a098;
     color: #0f292f;
-    color: #cccccc;
-    color: #fff;
+    color: #fff; 
     color: #0f292f;
+    color: #CCCCCC;
     /* font-weight: 800; */
 
     /* border: 4px solid; */
@@ -530,6 +532,7 @@ a {
 .home #about .header-bar {
     background: #fff;
     background: #0F292F;
+    background: #CCCCCC;
 }
 
 .home #expertise {
@@ -806,6 +809,15 @@ a {
     font-size: 16px;
     color: #fff;
     text-align: left;
+}
+
+.home #services .darr {
+   color: #fff;
+}
+
+.home #services .darr:hover {
+    cursor: pointer;
+    color: #cb2d6f;
 }
 
 .home #contact {

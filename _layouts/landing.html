@@ -158,9 +158,10 @@
 
         </h3>
 
-        <!--  <div class="flex-static darr animated" id="scrollme-about">↓</div> -->
+        <div class="flex-static darr animated" id="scrollme-about">↓</div>
 
       </section>
+      
 
     </div>
 
@@ -251,6 +252,9 @@
             </div>
           </div>
         </div>
+
+        <div class="flex-static darr animated" id="scrollme-expertise">↓</div>
+
       </section>
     </div>
 
@@ -363,6 +367,9 @@
             </div>
           </div>
         </div>
+
+        <div class="flex-static darr animated" id="scrollme-services">↓</div>
+
       </section>
     </div>
 
@@ -441,11 +448,17 @@
 
     $("#scrollme-about").click(function () {
       $([document.documentElement, document.body]).animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#expertise").offset().top
       }, 1000);
     });
 
-    $("#scrollme-about").click(function () {
+    $("#scrollme-expertise").click(function () {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#services").offset().top
+      }, 1000);
+    });
+
+    $("#scrollme-services").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#contact").offset().top
       }, 1000);
