@@ -537,7 +537,23 @@ a {
 
 .home #expertise {
     background: #fff;
+    background: #CCCCCC;
     min-height: 100vh;
+}
+
+.home #expertise h2 {
+    color: #cb2d6f;
+    color: #0F292F;
+    color: #0F292F;
+    margin: 0px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.home #expertise .header-bar {
+    background: #cb2d6f;
+    background: #0F292F;
+    
 }
 
 .expertise-full-stack {
@@ -546,14 +562,17 @@ a {
     border-radius: 5px;
     background: #14A098;
     background: #cb2d6f;
+    background: #fff;
     font-size: 22px;
     color: #fff;
+    color: #0F292F;
     margin-top: 2rem;
     text-align: center;
 }
 
 .expertise-full-stack-verical-line {
     border-left: 4px solid #14a098;
+    border-left: 4px solid #fff;
     height: 64px;
     position: relative;
     left: 50%;
@@ -567,6 +586,7 @@ a {
 .expertise-full-stack-horizontal-line {
     background: #CB2D6F;
     background: #14a098;
+    background: #fff;
     height: 4px;
     margin-top: 0px;
     width: 564px;
@@ -574,6 +594,7 @@ a {
 
 .expertise-full-stack-verical-line-frontend {
     border-left: 4px solid #14a098;
+    border-left: 4px solid #fff;
     height: 30px;
     position: relative;
     left: -85%;
@@ -581,6 +602,7 @@ a {
 }
 .expertise-full-stack-verical-line-backend {
     border-left: 4px solid #14a098;
+    border-left: 4px solid #fff;
     height: 30px;
     position: relative;
     left: -57%;
@@ -588,6 +610,7 @@ a {
 }
 .expertise-full-stack-verical-line-databases {
     border-left: 4px solid #14a098;
+    border-left: 4px solid #fff;
     height: 30px;
     position: relative;
     left: -29%;
@@ -595,6 +618,7 @@ a {
 }
 .expertise-full-stack-verical-line-devops {
     border-left: 4px solid #14a098;
+    border-left: 4px solid #fff;
     height: 30px;
     position: relative;
     left: -2%;
@@ -607,19 +631,7 @@ a {
     margin: 0 auto;
 }
 
-.home #expertise h2 {
-    color: #cb2d6f;
-    color: #0F292F;
-    margin: 0px;
-    text-align: center;
-    font-weight: 800;
-}
 
-.home #expertise .header-bar {
-    background: #cb2d6f;
-    background: #0F292F;
-    
-}
 
 .home #expertise .flex-container {
     display: flex;
@@ -643,6 +655,7 @@ a {
     height: 100px;
     width: 100px;
     background-color: #14a098;
+    background-color: #fff;
     border-radius: 50%;
     position: relative;
     /*  left: 12%; */
@@ -651,6 +664,7 @@ a {
 .home #expertise .circle .code {
     font-size: 70px;
     color: #fff;
+    color: #0F292F;
     position: relative;
     top: 13px;
     left: 0px;
@@ -659,6 +673,7 @@ a {
 .home #expertise .expertise-item-label {
     position: relative;
     color: #501f3a;
+    color: #0F292F;
     font-weight: 400;
     /* left: 11px; */
     padding-top: 7px;
@@ -672,6 +687,20 @@ a {
     /* left: 10px; */
 }
 
+.home #expertise li {
+    background: #fff;
+    color: #0F292F;
+    font-weight: 600;
+}
+
+.home #expertise .darr {
+    color: #0F292F;
+ }
+
+ .home #expertise .darr:hover {
+    cursor: pointer;
+    color: #cb2d6f;
+}
 .home #services {
     background: #14a098;
     background: #CCCCCC;
@@ -1121,8 +1150,6 @@ footer .footnote {
         min-height: 400px; */
     }
     .expertise-full-stack-horizontal-line {
-        background: #CB2D6F;
-        background: #14a098;
         height: 4px;
         margin-top: 0px;
         width: 524px;
