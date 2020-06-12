@@ -675,6 +675,7 @@ a {
 .home #services {
     background: #14a098;
     background: #CCCCCC;
+    background: #0F292F;
     min-height: 100vh;
 }
 
@@ -687,6 +688,7 @@ a {
 .home #services h2 {
     color: #fff;
     color: #0F292F;
+    color: #CCCCCC;
     text-align: center;
     margin: 0px;
     font-weight: 800;
@@ -695,6 +697,7 @@ a {
 .home #services .header-bar {
     background: #fff;
     background: #0F292F;
+    background: #CCCCCC;
 }
 
 .home #services .flex-container {
@@ -715,10 +718,11 @@ a {
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 1rem 0rem 1rem;
     max-width: 13rem; */
-    background: #CB2D6F;
+    /* background: #CB2D6F; */
     border: 1px solid;
     border-radius: 4px;
     border-color: #cccccc;
+    border-color: #CB2D6F;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 1rem 0rem 1rem;
     max-width: 15rem;
@@ -733,14 +737,13 @@ a {
     padding: 0rem 1rem 0rem 1rem;
     max-width: 13rem;
     border-color: #cccccc; */
-    background: #CB2D6F;
     border: 2px solid;
-    background: #CB2D6F;
     border: 1px solid;
     border-radius: 4px;
     padding: 0rem 1rem 0rem 1rem;
     max-width: 15rem;
     border-color: #cccccc;
+    border-color: #CB2D6F;
 }
 
 .home #services .circle {
@@ -753,6 +756,7 @@ a {
 .home #services .circle .code {
     font-size: 70px;
     color: #fff;
+    color: #CCCCCC;
     position: relative;
     top: 13px;
     left: 0px;
@@ -762,6 +766,7 @@ a {
     position: relative;
     color: #fff;
     color: #501f3a;
+    color: #CCCCCC;
     font-weight: 400;
     padding-top: 11px;
     font-weight: 600;
@@ -771,6 +776,7 @@ a {
     height: 2px;
     width: 70px;
     background: #fff;
+    background: #CCCCCC;
     width: 213px;
     margin: auto;
 }
@@ -788,6 +794,8 @@ a {
     margin: 0px 0px 0px 0px;
     font-size: 16px;
     color: #fff;
+    color: #CCCCCC;
+    background: #0f292f;
     font-weight: 600;
 }
 
@@ -799,6 +807,7 @@ a {
 .home #services .circle .code {
     font-size: 70px;
     color: #fff;
+    color: #CCCCCC;
     position: relative;
     top: 13px;
     left: 0px;
@@ -808,6 +817,7 @@ a {
     color: #0f292f;
     font-size: 16px;
     color: #fff;
+    color: #CCCCCC;
     text-align: left;
 }
 
