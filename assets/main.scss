@@ -202,7 +202,7 @@ li {
 }
 
 .home #about #area-of-expertise {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #CB2D6F;
     font-weight: 800;
 }
@@ -537,7 +537,7 @@ a {
 
 .home #expertise {
     background: #fff;
-    background: #CCCCCC;
+   /*  background: #CCCCCC; */
     min-height: 100vh;
 }
 
@@ -570,11 +570,13 @@ a {
     margin-top: 2rem;
     text-align: center;
     font-weight: 600;
+    border: 1px solid;
 }
 
 .expertise-full-stack-verical-line {
     border-left: 4px solid #14a098;
     border-left: 4px solid #fff;
+    border-left: 2px solid #CB2D6F;
     height: 64px;
     position: relative;
     left: 50%;
@@ -589,7 +591,8 @@ a {
     background: #CB2D6F;
     background: #14a098;
     background: #fff;
-    height: 4px;
+    background: #CB2D6F;
+    height: 2px;
     margin-top: 0px;
     width: 564px;
 }
@@ -597,6 +600,7 @@ a {
 .expertise-full-stack-verical-line-frontend {
     border-left: 4px solid #14a098;
     border-left: 4px solid #fff;
+    border-left: 2px solid #CB2D6F;
     height: 30px;
     position: relative;
     left: -85%;
@@ -605,6 +609,7 @@ a {
 .expertise-full-stack-verical-line-backend {
     border-left: 4px solid #14a098;
     border-left: 4px solid #fff;
+    border-left: 2px solid #CB2D6F;
     height: 30px;
     position: relative;
     left: -57%;
@@ -613,6 +618,7 @@ a {
 .expertise-full-stack-verical-line-databases {
     border-left: 4px solid #14a098;
     border-left: 4px solid #fff;
+    border-left: 2px solid #CB2D6F;
     height: 30px;
     position: relative;
     left: -29%;
@@ -621,9 +627,10 @@ a {
 .expertise-full-stack-verical-line-devops {
     border-left: 4px solid #14a098;
     border-left: 4px solid #fff;
+    border-left: 2px solid #CB2D6F;
     height: 30px;
     position: relative;
-    left: -2%;
+    left: -1%;
     bottom: 0px;
 }
 
@@ -656,17 +663,23 @@ a {
     width: 100px;
     background-color: #14a098;
     background-color: #fff;
-    border-radius: 50%;
+    /* background-color: #CB2D6F; */
+    border-color: #CB2D6F;
+    border: 2px solid;
+    border-radius: 11%;
     position: relative;
-    /*  left: 12%; */
+    border-color: #CB2D6F;
 }
 
 .home #expertise .circle .code {
     font-size: 70px;
     color: #fff;
     color: #0F292F;
-    color: #CB2D6F;
+    /* color: #CB2D6F; */
+    /* color: #fff; */
+    /* color: #CCCCCC; */
     position: relative;
+    font-weight: 200;
     top: 13px;
     left: 0px;
 }
@@ -690,8 +703,12 @@ a {
 
 .home #expertise li {
     background: #fff;
+    border-color: #cb2d6f;
+    border-color: #cccccc;
+    border-color: #0F292F;
     color: #0F292F;
-    font-weight: 600;
+    background: #cb2d6f;
+    color: #fff;
 }
 
 .home #expertise .darr {
@@ -863,6 +880,7 @@ a {
 .home #contact {
     background-color: #14a098;
     background: #fff;
+    background: #CCCCCC;
     color: #cb2d6f;
     margin: 0px;
     text-align: center;
@@ -961,7 +979,7 @@ a {
     max-width: 500px;
     transition: all 0.2s;
     outline: 0;
-    border: 1px solid;
+    border: 2px solid;
     border-color: #cb2d6f;
 }
 
@@ -1151,7 +1169,7 @@ footer .footnote {
         min-height: 400px; */
     }
     .expertise-full-stack-horizontal-line {
-        height: 4px;
+        height: 2px;
         margin-top: 0px;
         width: 524px;
     }
@@ -1208,7 +1226,7 @@ footer .footnote {
         left: -27%;
     }
     .expertise-full-stack-verical-line-devops {
-        left: -3%;
+        left: -7px;
     }
 
     .home #expertise .flex-item {
@@ -1317,7 +1335,7 @@ footer .footnote {
     }
     .expertise-full-stack-verical-line-devops {
        /*  left: 16px; */
-        left: 21px;
+        left: 29px;
     }
     .home #expertise .flex-item {
         /* padding: 0rem 1rem 0rem 0rem; */
